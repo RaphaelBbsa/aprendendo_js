@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #521796;
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 16px solid #3a1169;
+    text-transform: uppercase; /* uppercase serve para deixar as letras maiuscular*/
+    font-style: italic;
+}
+
+header button{
+    margin-left: 16px;
+}
+
+form {
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+form h2{
+    margin-bottom: 16px;
+}
+input,
+button{
+    padding: 8px;
+
+}
+button {
+    background-color: #2cb64a;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+#botao-cancelar{
+    background-color: red;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap; /* Faz com que meu item flex dentro do container se amontoe ou seja comprimido caso não tenha espaço no container*/
+}
+
+ul li {
+    max-width: 100%;
+    list-style: none;
+    position: relative; /*coloquei relative para ao overlay ficar relativo e ocupar o espaço relativo à esse container*/
+    max-height: 280px;
+    overflow-y: hidden; /*faz com que tudo que não respeitar meus 280px de altura, seja apagado*/
+}
+
+    .overlay-img {
+        padding: 16px;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        bottom: 0; /* vai ficar encostado tanto em baixo quanto a esquerda do elemento pai*/
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transition: all ease .5s;
+    }
+
+    .overlay-img a {
+        color: #fff;
+        text-decoration: none;
+    }
+    ul li:hover .overlay-img {
+        opacity: 1;
+    }
