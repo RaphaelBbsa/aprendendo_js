@@ -58,3 +58,9 @@ form{
     background-color: #e0e0e0;
     cursor: pointer;
 }
+#lista-tarefas li.concluida {
+    text-decoration: line-through; /* Adiciona o risco */
+    color: #888; /* Deixa o texto um pouco mais apagado */
+    transition: 0.3s;
+}
+
