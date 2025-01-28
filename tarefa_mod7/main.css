@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+header{
+    background-color: #beb8b8;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /*centraliza verticalmente*/
+    height: 90vh;
+}
+form{
+    background-color: #a6c0d869;
+    padding: 24px 0;
+    text-align: center;
+    /*margin: 0 auto; margin: 0 auto;:  Define a margem superior e inferior como 0 pixels e centraliza o formulário horizontalmente dentro do seu contêiner pai (usando auto nas margens laterais).
+    width: 50%;: Define a largura do formulário como 50% da largura do contêiner pai.*/
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 6px 4px 6px rgba(0,0,0,0.7);
+    /*position: absolute; posiciona em relação a página. Quando coloquei essa propriedade, meu formulário foi pra esquerda. Ele foi, pois a posição absolute*/
+    /*se posiciona relativa ao pai mais proximo que tb usa isso. No caso, é o body do página. */
+    /* left: 35%; */
+    /* top: 40%; */
+}
+#lista-tarefas{
+    width: 30%;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+}
+
+#lista-tarefas li {
+    background-color: #e2ad1c69;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 5px;
+    border-left: 5px solid #007bff; /* Criando um efeito visual */
+    font-size: 18px;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+/* Efeito ao passar o mouse na tarefa */
+#lista-tarefas li:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
